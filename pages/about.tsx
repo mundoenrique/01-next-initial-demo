@@ -18,7 +18,9 @@ export default function AboutPage() {
   );
 }
 
-AboutPage.getLayout = function getLayout(page) {
+AboutPage.getLayout = function getLayout(
+  page: React.ReactNode /* o JSX.Element */
+) {
   return (
     <MainLayout>
       <DarkLayout>{page}</DarkLayout>
